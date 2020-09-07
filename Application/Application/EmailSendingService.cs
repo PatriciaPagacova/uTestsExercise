@@ -2,7 +2,7 @@
 
 namespace Application
 {
-    public class EmailSendingService : IEmailSendingService
+    internal class EmailSendingService : IEmailSendingService
     {
         public bool Send(string emailContent)
         {
@@ -10,7 +10,7 @@ namespace Application
             {
                 return false;
             }
-            Console.WriteLine("Email has been sended with content:    " + emailContent);
+            Console.WriteLine("Email has been sent with content:    " + emailContent);
             return true;
         }
     }

@@ -2,7 +2,7 @@
 
 namespace Application
 {
-    public class EmailSender
+    internal class EmailSender
     {
         public event EventHandler EmailSent;
         private IEmailContentCreator myEmailContentCreator;
